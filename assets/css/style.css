@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+.roww {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+main.columnn {
+  width: 100% !important;
+  padding: 10px !important;
+  height: AUTO !important; /* Should be removed. Only for demonstration */
+  padding-left: 400px !important;
+}
+
+header.colmunnn {
+  width: 30% !important;
+  padding: 30px !important;
+  height: 1000px !important;
+  background-color: currentcolor !important;
+  position: fixed !important;
+  z-index: 1 !important;
+  vertical-align: middle !important;
+  padding-top: 20% !important;
+  padding-bottom: 20% !important;
+}
+.text-center {
+  color: white !important;
+}
+
+@media only screen and (max-width: 580px) {
+  main.columnn {
+    width: 100% !important;
+    padding: 10px !important;
+    height: AUTO !important; /* Should be removed. Only for demonstration */
+    padding-top: 200px !important;
+    padding-left: 0px !important;
+  }
+
+  header.colmunnn {
+    width: 100% !important;
+    padding: 30px !important;
+    height: auto !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+ul.list-group {
+  min-height: 130px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Staatliches', sans-serif;
+}
+
+#instructions {
+  width: 70%;
+  margin: 60px auto;
+  text-align: center;
+  color: white;
+}
+
+.dropover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dropover-active {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bottom-trash {
+  opacity: 0;
+  color: #f1f1f1;
+  font-size: 2.3rem;
+  font-family: 'Staatliches', sans-serif;
+  transform: translateY(150px);
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(234, 0, 39, 0.7);
+}
+
+.bottom-trash-drag {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bottom-trash-active {
+  background-color: rgba(234, 0, 39, 1);
+}
+
+.btn-add,
+.btn-save {
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #b067b4 0%,
+    #23a0c2 52%,
+    #24da73 90%
+  );
+  transition: all 0.5s ease-out;
+  background-size: 1px 100px;
+  background-position: 0 -10px;
+}
+
+.btn-close,
+.btn-delete {
+  background-color: #e81034;
+  background-image: linear-gradient(180deg, #ff9a8b 0%, #ea0028 100%);
+  transition: all 0.5s ease-out;
+  background-size: 1px 100px;
+  background-position: 0 -10px;
+}
+
+.btn-add:hover,
+.btn-save:hover,
+.btn-close:hover,
+.btn-delete:hover {
+  background-position: 1px -50px;
+}
